@@ -60,7 +60,7 @@ macOS() {
  	#sudo apt install gnome-shell-extension-zorin-hide-activities-move-clock -y
 	restart_gnome
 	gnome-extensions disable arc-menu@linxgem33.com
-	gnome-extensions disable zorin-taskbar@zorinos.com
+	#gnome-extensions disable zorin-taskbar@zorinos.com
 	gnome-extensions enable dash-to-dock@micxgx.gmail.com
 	#gnome-extensions enable zorin-hide-activities-move-clock@zorinos.com
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/zorin-dash-conf | dconf load /org/gnome/shell/extensions/dash-to-dock/
