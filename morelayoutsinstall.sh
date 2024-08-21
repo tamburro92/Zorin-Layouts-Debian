@@ -56,45 +56,46 @@ help () {
 }
 
 macOS() {
-	sudo apt install gnome-shell-extension-zorin-dash gnome-shell-extension-zorin-hide-activities-move-clock -y
+	sudo apt install gnome-shell-extension-dashtodock  -y
+ 	#sudo apt install gnome-shell-extension-zorin-hide-activities-move-clock -y
 	restart_gnome
 	gnome-extensions disable zorin-menu@zorinos.com
 	gnome-extensions disable zorin-taskbar@zorinos.com
-	gnome-extensions enable zorin-dash@zorinos.com
-	gnome-extensions enable zorin-hide-activities-move-clock@zorinos.com
-	curl https://raw.githubusercontent.com/TGRush/Zorin-extra-Layouts/main/zorin-dash-conf | dconf load /org/gnome/shell/extensions/zorin-dash/
+	gnome-extensions enable dash-to-dock@micxgx.gmail.com
+	#gnome-extensions enable zorin-hide-activities-move-clock@zorinos.com
+	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/zorin-dash-conf | dconf load /org/gnome/shell/extensions/dash-to-dock/
 }
 
 winclassic() {
 	echo -e "${red}Note that Gnome won't be restarted for this layout.${reset}"
-	gnome-extensions disable zorin-dash@zorinos.com
-	gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
+	gnome-extensions disable dash-to-dock@micxgx.gmail.com
+	#gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
 	gnome-extensions enable zorin-taskbar@zorinos.com
 	gnome-extensions enable zorin-menu@zorinos.com
-	curl https://raw.githubusercontent.com/TGRush/Zorin-extra-Layouts/main/classic-panel-conf | dconf load /org/gnome/shell/extensions/zorin-taskbar/
-	curl https://raw.githubusercontent.com/TGRush/Zorin-extra-Layouts/main/classic-menu-conf | dconf load /org/gnome/shell/extensions/zorin-menu/
+	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/classic-panel-conf | dconf load /org/gnome/shell/extensions/zorin-taskbar/
+	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/classic-menu-conf | dconf load /org/gnome/shell/extensions/zorin-menu/
 }
 
 ubuntu() {
-	sudo apt install gnome-shell-extension-zorin-dash -y
+	sudo apt install gnome-shell-extension-dashtodock  -y
 	echo -e "${green}Gnome will be restarted in 5 seconds...${reset}"
 	sleep 5s
 	restart_gnome
-	gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
+	#gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
 	gnome-extensions disable zorin-menu@zorinos.com
 	gnome-extensions disable zorin-taskbar@zorinos.com
-	gnome-extensions enable zorin-dash@zorinos.com
-	curl https://raw.githubusercontent.com/TGRush/Zorin-extra-Layouts/main/ubuntu-zorin-dash-conf | dconf load /org/gnome/shell/extensions/zorin-dash/
+	gnome-extensions enable dash-to-dock@micxgx.gmail.com
+	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/ubuntu-zorin-dash-conf | dconf load /org/gnome/shell/extensions/dash-to-dock/
 }
 
 win11() {
 	echo -e "${red}Note that Gnome won't be restarted for this layout.${reset}"
-	gnome-extensions disable zorin-dash@zorinos.com
-	gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
+	gnome-extensions disable dash-to-dock@micxgx.gmail.com
+	#gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
 	gnome-extensions enable zorin-taskbar@zorinos.com
 	gnome-extensions enable zorin-menu@zorinos.com
-	curl https://raw.githubusercontent.com/TGRush/Zorin-extra-Layouts/main/11-panel-conf | dconf load /org/gnome/shell/extensions/zorin-taskbar/
-	curl https://raw.githubusercontent.com/TGRush/Zorin-extra-Layouts/main/11-menu-conf | dconf load /org/gnome/shell/extensions/zorin-menu/
+	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/11-panel-conf | dconf load /org/gnome/shell/extensions/zorin-taskbar/
+	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/11-menu-conf | dconf load /org/gnome/shell/extensions/zorin-menu/
 }
 
 popshell() {
@@ -161,7 +162,7 @@ unity() {
 	wget https://extensions.gnome.org/extension-data/unitehardpixel.eu.v59.shell-extension.zip
 	unzip unitehardpixel.eu.v59.shell-extension.zip -d ~/.local/share/gnome-shell/extensions/unite@hardpixel.eu/
 	restart_gnome
-	gnome-extensions disable zorin-dash@zorinos.com
+	gnome-extensions disable dash-to-dock@micxgx.gmail.com
 	gnome-extensions disable zorin-menu@zorinos.com
 	gnome-extensions disable zorin-taskbar@zorinos.com
 	gnome-extensions enable unite@hardpixel.eu
