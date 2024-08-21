@@ -60,7 +60,7 @@ macOS() {
  	#sudo apt install gnome-shell-extension-zorin-hide-activities-move-clock -y
 	restart_gnome
 	gnome-extensions disable arc-menu@linxgem33.com
-	#gnome-extensions disable zorin-taskbar@zorinos.com
+	gnome-extensions disable dash-to-panel@jderose9.github.com
 	gnome-extensions enable dash-to-dock@micxgx.gmail.com
 	#gnome-extensions enable zorin-hide-activities-move-clock@zorinos.com
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/zorin-dash-conf | dconf load /org/gnome/shell/extensions/dash-to-dock/
@@ -70,9 +70,9 @@ winclassic() {
 	echo -e "${red}Note that Gnome won't be restarted for this layout.${reset}"
 	gnome-extensions disable dash-to-dock@micxgx.gmail.com
 	#gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
-	#gnome-extensions enable zorin-taskbar@zorinos.com
+	gnome-extensions enable dash-to-panel@jderose9.github.com
 	gnome-extensions enable arc-menu@linxgem33.com
-	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/classic-panel-conf | dconf load /org/gnome/shell/extensions/zorin-taskbar/
+	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/classic-panel-conf | dconf load /org/gnome/shell/extensions/dash-to-panel/
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/classic-menu-conf | dconf load /org/gnome/shell/extensions/arc-menu/
 }
 
@@ -83,7 +83,7 @@ ubuntu() {
 	restart_gnome
 	#gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
 	gnome-extensions disable arc-menu@linxgem33.com
-	#gnome-extensions disable zorin-taskbar@zorinos.com
+	gnome-extensions disable dash-to-panel@jderose9.github.com
 	gnome-extensions enable dash-to-dock@micxgx.gmail.com
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/ubuntu-zorin-dash-conf | dconf load /org/gnome/shell/extensions/dash-to-dock/
 }
@@ -92,9 +92,9 @@ win11() {
 	echo -e "${red}Note that Gnome won't be restarted for this layout.${reset}"
 	gnome-extensions disable dash-to-dock@micxgx.gmail.com
 	#gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
-	#gnome-extensions enable zorin-taskbar@zorinos.com
+	gnome-extensions enable dash-to-panel@jderose9.github.com
 	gnome-extensions enable arc-menu@linxgem33.com
-	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/11-panel-conf | dconf load /org/gnome/shell/extensions/zorin-taskbar/
+	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/11-panel-conf | dconf load /org/gnome/shell/extensions/dash-to-panel/
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/11-menu-conf | dconf load /org/gnome/shell/extensions/arc-menu/
 }
 
@@ -164,7 +164,7 @@ unity() {
 	restart_gnome
 	gnome-extensions disable dash-to-dock@micxgx.gmail.com
 	gnome-extensions disable arc-menu@linxgem33.com
-	#gnome-extensions disable zorin-taskbar@zorinos.com
+	#gnome-extensions disable dash-to-panel@jderose9.github.com
 	gnome-extensions enable unite@hardpixel.eu
 	echo -e "${green}all done!${reset}"
 }
