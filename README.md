@@ -1,5 +1,5 @@
 # Zorin-extra-Layouts
-A script which allows anyone to easily switch between some of Zorin's Pro/Ultimate Layouts on Core editions (GNOME, not Lite/XFCE)
+A script which allows anyone to easily switch between some of Zorin's Pro/Ultimate Layouts on **Debian** base distro editions (GNOME, not Lite/XFCE)
 
 This script currently covers **all official Zorin 16 Pro Layouts**
 
