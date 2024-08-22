@@ -59,7 +59,7 @@ macOS() {
 	sudo apt install gnome-shell-extension-dashtodock  -y
  	#sudo apt install gnome-shell-extension-zorin-hide-activities-move-clock -y
 	restart_gnome
-	gnome-extensions disable arc-menu@linxgem33.com
+	gnome-extensions disable arcmenu@arcmenu.com
 	gnome-extensions disable dash-to-panel@jderose9.github.com
 	gnome-extensions enable dash-to-dock@micxgx.gmail.com
 	#gnome-extensions enable zorin-hide-activities-move-clock@zorinos.com
@@ -71,7 +71,7 @@ winclassic() {
 	gnome-extensions disable dash-to-dock@micxgx.gmail.com
 	#gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
 	gnome-extensions enable dash-to-panel@jderose9.github.com
-	gnome-extensions enable arc-menu@linxgem33.com
+	gnome-extensions enable arcmenu@arcmenu.com
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/classic-panel-conf | dconf load /org/gnome/shell/extensions/dash-to-panel/
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/classic-menu-conf | dconf load /org/gnome/shell/extensions/arc-menu/
 }
@@ -82,7 +82,7 @@ ubuntu() {
 	sleep 5s
 	restart_gnome
 	#gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
-	gnome-extensions disable arc-menu@linxgem33.com
+	gnome-extensions disable arcmenu@arcmenu.com
 	gnome-extensions disable dash-to-panel@jderose9.github.com
 	gnome-extensions enable dash-to-dock@micxgx.gmail.com
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/ubuntu-zorin-dash-conf | dconf load /org/gnome/shell/extensions/dash-to-dock/
@@ -93,7 +93,7 @@ win11() {
 	gnome-extensions disable dash-to-dock@micxgx.gmail.com
 	#gnome-extensions disable zorin-hide-activities-move-clock@zorinos.com
 	gnome-extensions enable dash-to-panel@jderose9.github.com
-	gnome-extensions enable arc-menu@linxgem33.com
+	gnome-extensions enable arcmenu@arcmenu.com
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/11-panel-conf | dconf load /org/gnome/shell/extensions/dash-to-panel/
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/11-menu-conf | dconf load /org/gnome/shell/extensions/arc-menu/
 }
@@ -163,7 +163,7 @@ unity() {
 	unzip unitehardpixel.eu.v59.shell-extension.zip -d ~/.local/share/gnome-shell/extensions/unite@hardpixel.eu/
 	restart_gnome
 	gnome-extensions disable dash-to-dock@micxgx.gmail.com
-	gnome-extensions disable arc-menu@linxgem33.com
+	gnome-extensions disable arcmenu@arcmenu.com
 	#gnome-extensions disable dash-to-panel@jderose9.github.com
 	gnome-extensions enable unite@hardpixel.eu
 	echo -e "${green}all done!${reset}"
