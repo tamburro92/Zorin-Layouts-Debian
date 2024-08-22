@@ -16,6 +16,7 @@ multi-monitors=false
 panel-element-positions='{"0":[{"element":"leftBox","visible":true,"position":"centerMonitor"},{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":true,"position":"centerMonitor"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
 panel-element-positions-monitors-sync=true
 panel-positions='{"0":"BOTTOM"}'
+panel-lenghts='{"0":100}'
 panel-size=48
 peek-mode=true
 show-favorites=true
