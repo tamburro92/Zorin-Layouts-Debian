@@ -73,7 +73,7 @@ winclassic() {
 	gnome-extensions enable dash-to-panel@jderose9.github.com
 	gnome-extensions enable arcmenu@arcmenu.com
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/classic-panel-conf | dconf load /org/gnome/shell/extensions/dash-to-panel/
-	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/classic-menu-conf | dconf load /org/gnome/shell/extensions/arc-menu/
+	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/classic-menu-conf | dconf load /org/gnome/shell/extensions/arcmenu/
 }
 
 ubuntu() {
@@ -95,7 +95,7 @@ win11() {
 	gnome-extensions enable dash-to-panel@jderose9.github.com
 	gnome-extensions enable arcmenu@arcmenu.com
 	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/11-panel-conf | dconf load /org/gnome/shell/extensions/dash-to-panel/
-	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/11-menu-conf | dconf load /org/gnome/shell/extensions/arc-menu/
+	curl https://raw.githubusercontent.com/tamburro92/Zorin-Layouts-Debian/main/11-menu-conf | dconf load /org/gnome/shell/extensions/arcmenu/
 }
 
 popshell() {
